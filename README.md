@@ -23,3 +23,7 @@ Instructions on how to use the project:
 2. Run `python3 main.py`
 3. Output will be saved as file called `output.csv` in `data` directory
 
+### Testing
+1. Run `source myenv/bin/activate`
+2. Run `pytest`
+
