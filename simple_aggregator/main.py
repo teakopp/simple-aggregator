@@ -25,6 +25,7 @@ def main():
         writer = csv.DictWriter(csvfile, results.keys())
         writer.writeheader()
         writer.writerow(results)
+    print(f"\n{results}\n")
     print(f"Results written to {write_path}")
 
 
