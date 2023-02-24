@@ -13,7 +13,7 @@ Instructions on how to install and run the project:
 3. Create virtual environment using `python3 -m venv myenv`
 4. Run `source myenv/bin/activate`
 5. Install the required packages: `pip install -r requirements.txt`
-6. Run the project: `python simple_aggregator/main.py`
+6. Run the project: `python3 simple_aggregator/main.py`
 
 ### How to use
 
