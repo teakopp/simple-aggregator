@@ -24,8 +24,13 @@ def main():
     with open(write_path, 'w') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow(["Time Bucket,Number of Events"]) 
+        sorted_results = []
         for key, value in results.items():
             row = [f"{key},{value}"]
+            sorted_results.append(row)
+
+        sorted_results.sort()
+        for row in sorted_results:
             writer.writerow(row) 
 
     print(f"\n{results}\n")
