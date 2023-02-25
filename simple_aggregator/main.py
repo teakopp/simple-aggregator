@@ -22,9 +22,12 @@ def main():
     results = a.report()
     # Write them to csv called output.csv
     with open(write_path, 'w') as csvfile:
-        writer = csv.DictWriter(csvfile, results.keys())
-        writer.writeheader()
-        writer.writerow(results)
+        writer = csv.writer(csvfile)
+        writer.writerow(["Time Bucket,Number of Events"]) 
+        for key, value in results.items():
+            row = [f"{key},{value}"]
+            writer.writerow(row) 
+
     print(f"\n{results}\n")
     print(f"Results written to {write_path}")
 
